@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>sheStudies</title>
+        <link rel="stylesheet" type="text/css" href="external.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="shestudiesWebsite.html">Home</a></li>
+                <li><a href="Flashcards.html">Flashcards</a></li>
+                <li><a href="PracticeQuiz.html">Practice Quiz</a></li>
+                <li><a href="Notes.html">Notes</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <body style="background-color: rgb(245, 199, 245)">
+        <div class="option1">
+            <div class="dropdown">
+                <button class="dropbtn">Font <i class="fa fa-angle-down"></i></button>
+                <div class="dropdown-content">
+                <a href="#">Arial</a>
+                <a href="#">Times New Roman</a>
+                <a href="#">Lato</a>
+                </div>
+            </div>
+        </div>
+        <div class ="option2">
+            <div class ="dropdown">
+                <button class="dropbtn">Font Size <i class="fa fa-angle-down"></i></button>
+                <div class="dropdown-content">
+                <a href="#">2</a>
+                <a href="#">4</a>
+                <a href="#">6</a>
+                <a href="#">8</a>
+                </div>
+            </div>
+        </div>
+        <div class ="option3">
+            <div class ="dropdown">
+                <button class="dropbtn">Font Color <i class="fa fa-angle-down"></i></button>
+                <div class="dropdown-content">
+                <a href="#">red</a>
+                <a href="#">orange</a>
+                <a href="#">green</a>
+                <a href="#">blue</a>
+                <a href="#">black</a>
+                </div>
+            </div>
+        </div>
+        <div class ="option4">
+            <div class ="dropdown">
+                <button class="dropbtn">Highlighter <i class="fa fa-angle-down"></i></button>
+                <div class="dropdown-content">
+                <a href="#">yellow</a>
+                <a href="#">green</a>
+                <a href="#">blue</a>
+                <a href="#">pink</a>
+                <a href="#">purple</a>
+                <a href="#">orange</a>
+                </div>
+            </div>
+        </div>
+        <div class="btn_newnote">
+            <button type="button">Add New Note</button>
+            <div class="scroll-box" id="displayNotes"></div>
+            <div>
+                <button type="button" id="deleteBtn" onclick="deleteNotes()">Delete <i class="fa fa-trash-o"></i></button>
+                <button type="button">Open <i class="fa fa-arrow-up"></i></button>
+            </div>
+        </div>
+        <br><br><p style="font-size: 18px; text-align: center;" id="pageNum"></p>
+        <div class="add_saveasbtn">
+            <button type="button" id="addPageBtn">&#43; Add Page</button>
+            <button type="button" id="saveAsBtn" onclick="saveAs()">&#10003; Save As</button>
+        </div>
+        <form style="text-align: center;">
+            <textarea rows = "45" cols = "85" name = "description" id="description">
+        </textarea>
+        </form><br>
+        <i class="arrow right_notes"></i>
+        <i class="arrow left_notes"></i>
+        <div style="text-align: center;">
+            <button type="button" id="saveBtn" onclick="savePage()">Save</button>
+            <div class="divider"></div>
+                <button type="button">Delete Page</button>
+        </div><br>
+    </body>
+    <script type = "text/javascript" src = "Notes.js"></script>
+    <footer>
+        <p>Join Our Mailing List!</p>
+        <form>
+            <input type="text" placeholder="First Name"><br>
+            <input type="text" placeholder="Last Name"><br>
+            <input type="text" placeholder="Email"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </footer>
+</html>

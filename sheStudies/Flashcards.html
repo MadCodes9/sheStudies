@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>sheStudies</title>
+        <link rel="stylesheet" type="text/css" href="external.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="shestudiesWebsite.html">Home</a></li>
+                <li><a href="Flashcards.html">Flashcards</a></li>
+                <li><a href="PracticeQuiz.html">Practice Quiz</a></li>
+                <li><a href="Notes.html">Notes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body style="background-color: rgb(245, 199, 245)">
+        <div style="text-align: center;">
+            <h2>sheStudies Flashcard Creator</h2>
+        </div>
+        <p class="indicator" id="totalNum" style="font-weight: bold;"></p>
+        <i class="arrow right" id="next"></i>
+        <i class="arrow left" id="previous"></i>
+        <div id="flashcard" style="margin: auto; width: 450px; height: 250px; background-color: white;" onmouseover="style.backgroundColor ='#FFFAFD'" onmouseout="style.backgroundColor ='white'">
+            <p id="frontOrBack" style="font-size: 17px; font-weight: bold; text-align: right; padding: 10px; margin: auto;color:rgb(199, 28, 199);"></p>
+            <p id="display" style="font-size: 25px; text-align: center; "></p>
+        </div>
+        <div style="text-align: center;">
+                <button type="button" id="createBtn">Create</button>
+            <div class="divider"></div>
+            <button type="button" id="shuffBtn">Shuffle</button> 
+            <div class="divider"></div>
+                <button type="button" id="deleteBtn">Delete</button>
+            <div class="deletealldivider"></div>
+                <button type="button" id="deleteAllBtn">Delete All</button>
+        </div>
+    </body>
+    <script type = "text/javascript" src = "Flashcards.js"></script>
+    <footer>
+        <p>Join Our Mailing List!</p>
+        <form>
+            <input type="text" placeholder="First Name"><br>
+            <input type="text" placeholder="Last Name"><br>
+            <input type="text" placeholder="Email"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </footer>
+
+</html>
